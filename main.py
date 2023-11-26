@@ -35,7 +35,6 @@ def start_timer():
         title_text.config(text="Break", fg=RED)
         canvas.itemconfig(timer_text, fill=RED)
     elif reps % 2 == 0:
-        print(reps)
         reps += 1
         count_down(SHORT_BREAK_MIN * 60)
         add_marks()
