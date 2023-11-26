@@ -29,7 +29,6 @@ def start_timer():
     global reps
     window.deiconify()
     if reps % 8 == 0:
-        print(reps)
         reps = 1
         count_down(LONG_BREAK_MIN * 60)
         add_marks()
@@ -46,7 +45,6 @@ def start_timer():
         if check_mark.cget("text") == "✔✔✔✔":
             check_mark.config(text="")
         reps += 1
-        print(reps)
         count_down(WORK_MIN * 60)
         title_text.config(text="Work!", fg=GREEN)
         canvas.itemconfig(timer_text, fill=GREEN)
